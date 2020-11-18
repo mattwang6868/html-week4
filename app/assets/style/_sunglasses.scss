@@ -1,33 +1,9 @@
 .content{
-    .sunglasses-banner{
-        .mr15{
-            background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true");
-            margin-right: 15px;
-            height: 309px;
-            width: 945px;
-            background-position: center;
-            @media(max-width:$lg){
-                margin: 0;
-            }
-            @media(max-width:$md){
-                height: 144px;
-            }
-        }
-        .ml15{
-            background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true");
-            margin-right: 15px;
-            height: 309px;
-            width: 945px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            @media(max-width:$lg){
-                margin: 0;
-            }
-            @media(max-width:$md){
-                height: 144px;
-            }
-        }
+    .sunglasses-left{
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true");
+    }
+    .sunglasses-right{
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true");
     }
     .products{
         .products-list{
@@ -36,115 +12,115 @@
             justify-content: center;
             flex-wrap: wrap;
             box-sizing: border-box;
-            @media(max-width:$lg){
+            @include pad(){
                 max-width: 690px;
             }
-            @media(max-width:$md){
+            @include phone(){
                 max-width: 345px;
                 padding: 0 15px;
             }
             .d-none{
                 display: none;
-                @media(max-width:$lg){
+                @include pad(){
                     display: inline-block;
                 }
             }
             .d-phone-none{
-                @media(max-width:$md){
+                @include phone(){
                     display: none;
                 }
             }
-            .sunglasses-card{
-                max-width: 31.33%;
-                margin: 0 1% 104px 1%;
-                @media(max-width:$lg){
-                    max-width:46%;
-                    margin: 0 2% 104px 2%;
-                }
-                @media(max-width:$md){
-                    max-width:100%;
-                    margin: 0 0 32px 0;
-                }
-                a{
-                    overflow: hidden;
-                    position: relative;
-                    width: 100%;
-                    display: block;
-                    &::before{
-                        content: "";
-                        width: 100px;
-                        height: 100px;
-                        background: $primary;
-                        position: absolute;
-                        z-index: 1;
-                        top: 30%;
-                        left: 40%;
-                        border-radius: 100%;
-                        transform: scale(0);
-                        transition-property: transform;
-                        transition: 300ms ease-out;
-                    }
-                    &:hover::before{
-                        opacity: 0.5;
-                        transform: scale(5);
-                    }
-                }
-                span{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    display: inline-block;
-                    width: 100%;
-                    overflow: hidden;
-                    line-height: 224px;
-                    z-index: 2;
-                    color: $white;
-                    opacity: 0;
-                    @media(max-width:$lg){
-                        height: 164px;
-                    }
-                    &:hover{
-                        opacity: 1;
-                        transition: all 1s;
-                    }
-                }
-                img{
-                    width:100%;
-                    height: 224px;
-                    object-fit: cover;
-                    @media(max-width:$lg){
-                        display: none;
-                    }
-                }
-                .d-pad{
-                    max-width:330px;
-                    height: 164px;
-                    display: none;
-                    @media(max-width:$lg){
-                        display:inline-block;
-                    }
-                    @media(max-width:$md){
-                        max-width:345px;
-                    }
-                }
-                .d-pad.d-phone-none{
-                    max-width:330px;
-                    height: 164px;
-                    display: none;
-                    @media(max-width:$lg){
-                        display:inline-block;
-                    }
-                    @media(max-width:$md){
-                        display: none;
-                    }
-                }
-                .d-phone{
-                    @media(max-width:$md){
-                        display:inline-block;
-                        max-width:345px;
-                    }
-                }
+            
+               
+                
+        }
+    } 
+    .sunglasses-card{
+        max-width: 31.33%;
+        margin: 0 1% 104px 1%;
+        @include pad(){
+            max-width:46%;
+            margin: 0 2% 104px 2%;
+        }
+        @include phone(){
+            max-width:100%;
+            margin: 0 0 32px 0;
+        }
+        a{
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            display: block;
+            &::before{
+                content: "";
+                width: 100px;
+                height: 100px;
+                background: $primary;
+                position: absolute;
+                z-index: 1;
+                top: 30%;
+                left: 40%;
+                border-radius: 100%;
+                transform: scale(0);
+                transition-property: transform;
+                transition: 300ms ease-out;
+            }
+            &:hover::before{
+                opacity: 0.5;
+                transform: scale(5);
+            }
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            line-height: 224px;
+            z-index: 2;
+            color: $white;
+            opacity: 0;
+            &:hover{
+                opacity: 1;
+                transition: all 1s;
+            }
+        }
+        img{
+            width:100%;
+            height: 224px;
+            object-fit: cover;
+            @include pad(){
+                display: none;
+            }
+        }
+        .d-pad{
+            max-width:330px;
+            height: 164px;
+            display: none;
+            @include pad(){
+                display:inline-block;
+            }
+            @include phone(){
+                max-width:345px;
+            }
+        }
+        .d-pad.d-phone-none{
+            max-width:330px;
+            height: 164px;
+            display: none;
+            @include pad(){
+                display:inline-block;
+            }
+            @include phone(){
+                display: none;
+            }
+        }
+        .d-phone{
+            @include phone(){
+                display:inline-block;
+                max-width:345px;
             }
         }
     }

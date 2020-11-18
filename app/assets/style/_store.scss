@@ -1,14 +1,11 @@
 .store-banner{
     height: 304px;
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     font-weight: bolder;
-    @media(max-width:$lg){
+    @include pad(){
         background-position: 52%;
     }
-    @media(max-width:$md){
+    @include phone(){
         background-position: 40% ;
         background-size: cover;
         height: 143px;
@@ -16,159 +13,154 @@
     .title{
         max-width: 1080px;
         margin: 0 auto;
-        @media(max-width:$lg){
+        @include pad(){
             max-width: 690px;
         }
-        @media(max-width:$md){
+        @include phone(){
             max-width: 375px;
         }
-        h1{ 
-            display: inline-block;
-            font-size: 64px;
-            line-height: 64px;
-            margin-top: 230px;
-            @media(max-width:$lg){
-                font-size: $font-size-xxxl;
-                line-height: 80px;
-            }  
-            @media(max-width:$md){
-                margin-left: 15px;
-                margin-top: 103px;
-                font-size: 28px;
-                line-height: 28px;
-            }      
-        }
+    }
+    h1{ 
+        display: inline-block;
+        font-size: 64px;
+        line-height: 64px;
+        margin-top: 230px;
+        @include pad(){
+            font-size: $font-size-xxxl;
+            line-height: 80px;
+        }  
+        @include phone(){
+            margin-left: 15px;
+            margin-top: 103px;
+            font-size: 28px;
+            line-height: 28px;
+        }      
     }
     img{
         margin-left: 24px;
         vertical-align: top;
-        @media(max-width:$md){
+        @include phone(){
             width: 16px;
         }      
     }
 }
-.content{
-    .container{
-        max-width: 1110px;
+.location-list{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 14px 0 304px 0;
+    font-weight: bolder;
+    @include pad(){
+        max-width: 690px;
         margin: 0 auto;
-        .location-list{
-            padding: 14px 0 304px 0;
+        padding: 14px 39px 104px 39px;
+    }
+    @include phone(){
+        max-width: 345px;
+        padding: 8px 0 56px 0;
+    }
+    form{
+        margin-left: 11px;
+        margin-bottom: 32px;
+        @include phone(){
+            margin-left: 0;
+        }
+    }    
+    label{
+        vertical-align: middle;
+        font-size: $font-size-l;
+        line-height: $line-height-m;
+        margin-right: 20px;
+        @include pad(){
+            font-size: $base-font-size;
+        }
+        @include phone(){
+            font-size: 14px;
+            margin-right: 12px;
+        }
+    }
+    select{
+        font-size: 18px;
+        padding: 10px 251px 10px 19px;
+        border:1px solid #CED4DA;
+        color: #495057;
+        @include pad(){
+            padding: 8px 173px 8px 12px;
+        }
+        @include phone(){
+            padding: 8px 173px 8px 16px;
+        }
+    }
+    ul{
+        width:100%;   
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 31.33%;
+        margin: 0 1% 32px 1%;
+        border:1px solid #00000020;
+        box-sizing: border-box;
+        @include pad(){
+            width: 47%;
+            margin: 0 1.5% 20px 1.5%;
+        }
+        @include phone(){
             width: 100%;
-            font-weight: bolder;
-            @media(max-width:$lg){
-                max-width: 690px;
-                padding: 14px 0 104px 0;
-            }
-            @media(max-width:$md){
-                max-width: 345px;
-                padding: 8px 0 56px 0;
-            }
-            form{
-                margin-left: 11px;
-                margin-bottom: 32px;
-                @media(max-width:$md){
-                    margin-left: 0;
-                }
-                label{
-                    vertical-align: middle;
-                    font-size: $font-size-l;
-                    line-height: $line-height-m;
-                    margin-right: 20px;
-                    @media(max-width:$lg){
-                        font-size: $base-font-size;
-                    }
-                    @media(max-width:$md){
-                        font-size: 14px;
-                        margin-right: 12px;
-                    }
-                }
-                select{
-                    font-size: 18px;
-                    padding: 10px 251px 10px 19px;
-                    border:1px solid #CED4DA;
-                    color: #495057;
-                    @media(max-width:$lg){
-                        padding: 8px 173px 8px 12px;
-                    }
-                    @media(max-width:$md){
-                        padding: 8px 173px 8px 16px;
-                    }
-                }
-            }
-            ul{
-                width:100%;   
-                flex-wrap: wrap;
-                .card{
-                    width: 31.33%;
-                    margin: 0 1% 32px 1%;
-                    border:1px solid #00000020;
-                    box-sizing: border-box;
-                    @media(max-width:$lg){
-                        width: 47%;
-                        margin: 0 1.5% 20px 1.5%;
-                    }
-                    @media(max-width:$md){
-                        width: 100%;
-                        margin: 0 0 20px 0;
-                    }
-                    .card-img-top{
-                        width: 100%;
-                    }
-                    h5{
-                        font-size: $font-size-l;
-                        line-height: $line-height-l;
-                        padding: 12px 0 12px 24px;
-                        border-bottom:1px solid #00000020;
-                        @media(max-width:$md){
-                            font-size: $base-font-size;
-                            line-height: $base-line-height;
-                        }
-                    }
-                    .card-text{
-                        flex-direction: column;
-                        padding: 0 24px;
-                        box-sizing: border-box;
-                        @media(max-width:$md){
-                            padding: 0 16px;
-                        }
-                        li{ 
-                            display: flex;
-                            align-items: center;
-                            padding: 8px 0;
-                            word-wrap:break-word;
-                            p{  
-                                font-size: 20px;
-                                line-height: $line-height-m;
-                                @media(max-width:$md){
-                                    font-size: 14px;
-                                    line-height: 21px;
-                                }
-                            }
-                            img{
-                                align-self: flex-start;
-                                height: 21px;
-                                width: 21px;
-                                margin-right: 12px;
-                                margin-top: 5px;
-                            }
-                            
-                        }
-                    }
-                    .card-btn{
-                            width: 100%;
-                            font-size: 19px;
-                            line-height: 26px;
-                            padding: 20px 0;
-                            color:#fff;
-                            background: #000;
-                            @media(max-width:$md){
-                                font-size: 14px;
-                                line-height: 21px;
-                                padding: 16px 0;
-                            }
-                        }
-                }
+            margin: 0 0 20px 0;
+        }
+        .card-img-top{
+            width: 100%;
+        }
+        h5{
+            font-size: $font-size-l;
+            line-height: $line-height-l;
+            padding: 12px 0 12px 24px;
+            border-bottom:1px solid #00000020;
+            @include phone(){
+                font-size: $base-font-size;
+                line-height: $base-line-height;
             }
         }
-    }  
-}
+    }
+    .card-text{
+        flex-direction: column;
+        padding: 0 24px;
+        box-sizing: border-box;
+        @include phone(){
+            padding: 0 16px;
+        }
+        li{ 
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            word-wrap:break-word;
+        }    
+        p{  
+            font-size: 20px;
+            line-height: $line-height-m;
+            @include phone(){
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        img{
+            align-self: flex-start;
+            height: 21px;
+            width: 21px;
+            margin-right: 12px;
+            margin-top: 5px;
+        }
+    }
+    .card-btn{
+        width: 100%;
+        font-size: 19px;
+        line-height: 26px;
+        padding: 20px 0;
+        color:#fff;
+        background: #000;
+        @include phone(){
+            font-size: 14px;
+            line-height: 21px;
+            padding: 16px 0;
+        }
+    }
+} 
