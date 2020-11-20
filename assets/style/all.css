@@ -740,13 +740,13 @@ table {
         -o-transition: all 0.5s;
         transition: all 0.5s; }
 
-.content .catogary ul {
+.catogary ul {
   max-width: 1386px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto; }
 
-.content .catogary li {
+.catogary li {
   width: 100%;
   height: 103px;
   -webkit-box-sizing: border-box;
@@ -755,12 +755,12 @@ table {
   text-align: center;
   font-weight: bolder; }
   @media (max-width: 992px) {
-    .content .catogary li {
+    .catogary li {
       height: 70px; } }
   @media (max-width: 767px) {
-    .content .catogary li {
+    .catogary li {
       height: 35px; } }
-  .content .catogary li a {
+  .catogary li a {
     display: block;
     text-decoration: none;
     color: #000;
@@ -769,129 +769,129 @@ table {
     width: 100%;
     padding: 20px 0; }
     @media (max-width: 992px) {
-      .content .catogary li a {
+      .catogary li a {
         padding: 14px 0;
         font-size: 28px;
         line-height: 42px; } }
     @media (max-width: 767px) {
-      .content .catogary li a {
+      .catogary li a {
         padding: 8px 0;
         font-size: 14px;
         line-height: 19px; } }
-  .content .catogary li:hover {
+  .catogary li:hover {
     border-bottom: 16px solid #AA0601;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; }
     @media (max-width: 992px) {
-      .content .catogary li:hover {
+      .catogary li:hover {
         border-bottom: 8px solid #AA0601; } }
     @media (max-width: 767px) {
-      .content .catogary li:hover {
+      .catogary li:hover {
         border-bottom: 4px solid #AA0601; } }
 
-.content .catogary .active {
+.catogary .active {
   border-bottom: 16px solid #AA0601; }
   @media (max-width: 992px) {
-    .content .catogary .active {
+    .catogary .active {
       border-bottom: 8px solid #AA0601; } }
   @media (max-width: 767px) {
-    .content .catogary .active {
+    .catogary .active {
       border-bottom: 4px solid #AA0601; } }
 
-.content .diamond img {
+.diamond img {
   vertical-align: text-top;
   margin-right: 8px; }
   @media (max-width: 992px) {
-    .content .diamond img {
+    .diamond img {
       width: 32px; } }
   @media (max-width: 767px) {
-    .content .diamond img {
+    .diamond img {
       width: 15px; } }
 
-.content .sun img {
+.sun img {
   vertical-align: text-top;
   margin-right: 5px;
   width: 45px; }
   @media (max-width: 992px) {
-    .content .sun img {
+    .sun img {
       width: 32px; } }
   @media (max-width: 767px) {
-    .content .sun img {
+    .sun img {
       width: 14px; } }
 
-.content .thunder img {
+.thunder img {
   vertical-align: sub;
   margin-right: 8px; }
   @media (max-width: 992px) {
-    .content .thunder img {
+    .thunder img {
       width: 23px; } }
   @media (max-width: 767px) {
-    .content .thunder img {
+    .thunder img {
       width: 10px; } }
 
-.content .icon {
+.icon {
   display: inline-block; }
 
-.content .banner-left {
+.banner-left {
   margin-right: 15px;
   height: 309px;
   width: 945px; }
   @media (max-width: 992px) {
-    .content .banner-left {
+    .banner-left {
       margin: 0; } }
   @media (max-width: 767px) {
-    .content .banner-left {
+    .banner-left {
       height: 144px; } }
 
-.content .banner-right {
+.banner-right {
   margin-left: 15px;
   height: 309px;
   width: 945px; }
   @media (max-width: 992px) {
-    .content .banner-right {
+    .banner-right {
       margin: 0; } }
   @media (max-width: 767px) {
-    .content .banner-right {
+    .banner-right {
       height: 144px; } }
 
-.content .optical-right {
+.optical-right {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-2.png?raw=true"); }
 
-.content .optical-left {
+.optical-left {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-1.png?raw=true"); }
 
-.content .products {
+.products {
   text-align: center;
   padding-top: 88px; }
   @media (max-width: 992px) {
-    .content .products {
+    .products {
       padding-top: 40px; } }
   @media (max-width: 767px) {
-    .content .products {
+    .products {
       padding-top: 30px; } }
-  .content .products .container {
+  .products .container {
     max-width: 1110px;
     margin: 0 auto; }
-    .content .products .container h1 {
+    .products .container h1 {
       font-weight: bolder;
       font-size: 42px;
       line-height: 63px; }
       @media (max-width: 767px) {
-        .content .products .container h1 {
+        .products .container h1 {
           font-size: 16px;
           line-height: 26px; } }
-    .content .products .container h2 {
+    .products .container h2 {
       font-weight: bolder;
       font-size: 32px;
       line-height: 48px;
       margin-bottom: 32px; }
       @media (max-width: 767px) {
-        .content .products .container h2 {
+        .products .container h2 {
           font-size: 16px;
           line-height: 22px;
           margin-bottom: 20px; } }
-    .content .products .container .products-list {
+    .products .container .products-list {
       width: 100%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -901,29 +901,29 @@ table {
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
       @media (max-width: 992px) {
-        .content .products .container .products-list {
+        .products .container .products-list {
           max-width: 690px; } }
       @media (max-width: 767px) {
-        .content .products .container .products-list {
+        .products .container .products-list {
           max-width: 345px;
           padding: 0 15px; } }
-      .content .products .container .products-list .optical-card {
+      .products .container .products-list .optical-card {
         max-width: 23%;
         margin: 0 1% 104px 1%; }
         @media (max-width: 992px) {
-          .content .products .container .products-list .optical-card {
+          .products .container .products-list .optical-card {
             max-width: 48%;
             margin: 0 2% 104px 2%; } }
         @media (max-width: 767px) {
-          .content .products .container .products-list .optical-card {
+          .products .container .products-list .optical-card {
             max-width: 100%;
             margin: 0 0 32px 0; } }
-        .content .products .container .products-list .optical-card a {
+        .products .container .products-list .optical-card a {
           overflow: hidden;
           position: relative;
           width: 100%;
           display: block; }
-          .content .products .container .products-list .optical-card a::before {
+          .products .container .products-list .optical-card a::before {
             content: "";
             width: 100px;
             height: 100px;
@@ -944,12 +944,12 @@ table {
             -webkit-transition: 300ms ease-out;
             -o-transition: 300ms ease-out;
             transition: 300ms ease-out; }
-          .content .products .container .products-list .optical-card a:hover::before {
+          .products .container .products-list .optical-card a:hover::before {
             opacity: 0.5;
             -webkit-transform: scale(3.5);
                 -ms-transform: scale(3.5);
                     transform: scale(3.5); }
-        .content .products .container .products-list .optical-card span {
+        .products .container .products-list .optical-card span {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -963,28 +963,28 @@ table {
           z-index: 2;
           color: #fff;
           opacity: 0; }
-          .content .products .container .products-list .optical-card span:hover {
+          .products .container .products-list .optical-card span:hover {
             opacity: 1;
             -webkit-transition: all 1s;
             -o-transition: all 1s;
             transition: all 1s; }
-        .content .products .container .products-list .optical-card img {
+        .products .container .products-list .optical-card img {
           width: 100%;
           height: 164px; }
           @media (max-width: 992px) {
-            .content .products .container .products-list .optical-card img {
+            .products .container .products-list .optical-card img {
               display: none; } }
-        .content .products .container .products-list .optical-card .d-pad {
+        .products .container .products-list .optical-card .d-pad {
           max-width: 330px;
           height: 164px;
           display: none; }
           @media (max-width: 992px) {
-            .content .products .container .products-list .optical-card .d-pad {
+            .products .container .products-list .optical-card .d-pad {
               display: inline-block; } }
           @media (max-width: 767px) {
-            .content .products .container .products-list .optical-card .d-pad {
+            .products .container .products-list .optical-card .d-pad {
               max-width: 345px; } }
-      .content .products .container .products-list .card-text {
+      .products .container .products-list .card-text {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
@@ -992,63 +992,63 @@ table {
         line-height: 36px;
         font-weight: bolder; }
         @media (max-width: 992px) {
-          .content .products .container .products-list .card-text {
+          .products .container .products-list .card-text {
             line-height: 30px; } }
         @media (max-width: 767px) {
-          .content .products .container .products-list .card-text {
+          .products .container .products-list .card-text {
             font-size: 16px; } }
-        .content .products .container .products-list .card-text .price {
+        .products .container .products-list .card-text .price {
           color: #AA0601; }
-      .content .products .container .products-list .color-list .color-box1 {
+      .products .container .products-list .color-list .color-box1 {
         width: 24px;
         height: 24px;
         border-radius: 4px;
         background-color: #5F3E2D;
         margin-right: 8px; }
-      .content .products .container .products-list .color-list .color-box2 {
+      .products .container .products-list .color-list .color-box2 {
         width: 24px;
         height: 24px;
         border-radius: 4px;
         background-color: #B75929; }
 
-.content .pagination {
+.pagination {
   margin-bottom: 156px; }
   @media (max-width: 992px) {
-    .content .pagination {
+    .pagination {
       margin-bottom: 104px; } }
   @media (max-width: 767px) {
-    .content .pagination {
+    .pagination {
       margin-bottom: 56px;
       margin-top: 8px; } }
-  .content .pagination .container {
+  .pagination .container {
     max-width: 100%; }
-    .content .pagination .container ul {
+    .pagination .container ul {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .content .pagination .container ul li {
+      .pagination .container ul li {
         border: 1px solid #555555; }
-        .content .pagination .container ul li a {
+        .pagination .container ul li a {
           text-decoration: none;
           color: #555555;
           width: 100%;
           display: inline-block;
           padding: 10px 15px; }
           @media (max-width: 767px) {
-            .content .pagination .container ul li a {
+            .pagination .container ul li a {
               font-size: 12px;
               line-height: 18px;
               padding: 8px 8px; } }
-      .content .pagination .container ul .active {
+      .pagination .container ul .active {
         background-color: #000000; }
-        .content .pagination .container ul .active a {
+        .pagination .container ul .active a {
           color: #fff; }
-      .content .pagination .container ul .bg-gray {
+      .pagination .container ul .bg-gray {
         background: #F2F2F2; }
-    .content .pagination .container .d-lg {
+    .pagination .container .d-lg {
       display: none; }
       @media (max-width: 992px) {
-        .content .pagination .container .d-lg {
+        .pagination .container .d-lg {
           display: block; } }
 
 .content .sunglasses-left {
